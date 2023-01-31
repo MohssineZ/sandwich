@@ -1,0 +1,35 @@
+git init : permet de créer un dépôt git local
+git status : Montre l’état des fichier en montrant les changement qui sont en stage et ceux qui ne le sont pas encore.
+git add <mon_du_fichier> : Ajouter un fichier dans le stage
+git add . : AJouter tous les fichiers modifiés dans le stage
+git commit -m"mon message" : Créer un commit(version son code)
+git log : Afficher l'historique des versions
+git log --oneline : Afficher l'historique des versions en une ligne
+git remote add origin <url_depot_distant> : Lier le dépôt local au dépôt distant
+git remote set-url origin <url_depot_distant> : Changer url pour le dépot distant
+git push origin <nom_branch> : Envoyer le code dans le dépôt distant
+git checkout <nom_branch> : Switcher d'une branche à une autre
+git checkout -b <nouvellee_branche> : Créer une branche, et se positionner dessus
+git merge <nom_branch> : Combiner la brach courant avec <nom_branch>git clone <url> : Permet de cloner le dépôt Git afin d'avoir une copie en local.
+
+Créer un répertoire sandwich. 
+Créer un fichier à l’intérieur ‘burger.txt’ qui contient la liste des ingrédients 
+d’un burger (un par ligne), par exemple :
+- Steak
+- Salade
+- Tomate
+- Cornichon
+- Fromage
+❏ Vérifier l’état de votre dépôt local : git status 
+❏ Préparer burget.txt pour le commit : git add
+❏ Commitez les modifications : git commit -m “message de commit”
+❏ Vérifier l’état du dépôt local
+❏ Vérifier la liste des changements prêt à l’envoi : git log
+Créez quelques autres sandwichs (hot_dog.txt, jambon_beurre.txt, 
+etc.), modifiez également le contenu de burger.txt. Attention : 
+chaque modification doit être placée dans un commit dédié. 
+Effectuez au moins 5 modifications en reprenant les étapes de 
+l’exercice 2.
+Testez git log
+❏ Réalisez un push : git push
+❏ Allez constater la mise à jour sur le repository
